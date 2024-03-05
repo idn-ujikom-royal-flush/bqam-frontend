@@ -15,6 +15,7 @@ header {
   width: auto;
   height: auto;
   color: white;
+  z-index: 1000;
 }
 
 header img {
@@ -28,22 +29,33 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  margin-inline: 80px;
-  margin-block: 32px;
-  position: absolute;
+  padding: 24px 64px;
+  position: fixed;
+  color: white;
+  z-index: 1000;
+  transition: all 1;
+  background-color: transparent;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+nav.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #000000;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .container-nav {
   display: flex;
   justify-content: space-between;
+  padding: 10 20px;
 }
 
 .logo-nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  font-size: 16px;
+  gap: 20px;
 }
 
 .logo-nav img {
@@ -51,47 +63,20 @@ nav {
   height: 40px;
 }
 
+.logo-nav h1 {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+}
+
 .nav-right {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  font-size: 16px;
 }
 
-.search-nav {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  gap: 10px;
-  cursor: pointer;
-}
-
-.login-nav {
-  display: flex;
-  gap: 24px;
-}
-
-.sign-in {
-  cursor: pointer;
-}
-
-.sign-up {
-  cursor: pointer;
-}
-
-.nav-bottom {
-  margin-inline: 80px;
-  margin-block: 32px;
-}
-
-.container-nav-bottom {
-  margin: 32px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.container-nav-bottom a {
+.nav-right a {
   font-weight: normal;
   font-size: 16px;
   cursor: pointer;
@@ -394,7 +379,7 @@ nav {
 
 .alumni-card-item:hover {
   /* box-shadow: 20px 20px 0 #323270; */
-  c
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .alumni-card-item-text {
@@ -712,26 +697,32 @@ iframe {
   flex-direction: column;
   padding: 20px;
   color: white;
-  background-color: #1e272e;
+  background-color: #3c4b4e;
   gap: 10px;
   transition: all 1s;
 }
 
 .map-card:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .map-title {
   display: flex;
   text-align: start;
   gap: 10px;
-  font-family: "Inter", sans-serif;
+  align-items: center;
 }
 
 .map-title h3 {
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
+  font-family: "Inter", sans-serif;
+}
+
+.map-title img {
+  width: 24px;
+  height: auto;
 }
 
 .map-card p {
@@ -740,6 +731,7 @@ iframe {
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
+  font-family: "Inter", sans-serif;
 }
 
 /* !!! PROMOSI !!! */
