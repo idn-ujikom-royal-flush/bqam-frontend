@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* !!! NAVBAR !!! */
 
 header {
@@ -394,7 +398,6 @@ nav {
 
 .alumni-card-item:hover {
   /* box-shadow: 20px 20px 0 #323270; */
-  c
 }
 
 .alumni-card-item-text {
