@@ -9,8 +9,6 @@
       rel="stylesheet"
     />
     <script src="index.js" type="text/javascript"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <title>BQ Magetan</title>
   </head>
   <body>
@@ -24,13 +22,38 @@
             <img src="assets/image/bq_logo.png" />
             <h1>Pesantren Baitul Quran Magetan</h1>
           </div>
-          <div class="nav-right">
-            <a class="home-nav">Home</a>
-            <a class="information-nav">Information</a>
-            <a class="gallery-nav">Gallery</a>
-            <a class="aboutus-nav">About Us</a>
-            <a class="registration-nav">Registration</a>
-            <a class="contact-nav">Contact</a>
+          <div class="navbar">
+            <a class="home">Home</a>
+            <div class="dropdown">
+              <button class="">Information</button>
+              <div class="dropdown-content">
+                <a href="">Berita</a>
+                <a href="">Agenda</a>
+                <a href="">Wali Santri</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button>Gallery</button>
+              <div class="dropdown-content">
+                <a href="">Dokumentasi</a>
+                <a href="">Tahfidz Santri</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button>About Us</button>
+              <div class="dropdown-content">
+                <a href="">Profil Pesantren</a>
+                <a href="">Visi Misi Pesantren</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button>Registration</button>
+              <div class="dropdown-content">
+                <a href="">PSB</a>
+                <a href="">Karir</a>
+              </div>
+            </div>
+            <a class="contact">Contact</a>
           </div>
         </div>
       </nav>
