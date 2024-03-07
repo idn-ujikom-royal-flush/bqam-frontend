@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -75,12 +75,18 @@ nav.scrolled {
 
 .navbar {
   overflow: hidden;
+  color: white;
+  transition: color 0.5s;
+}
+
+.navbar.scrolled {
+  color: #000000;
+  transition: color 0.5s;
 }
 
 .navbar a {
   float: left;
   display: block;
-  color: white;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -105,6 +111,17 @@ nav.scrolled {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  transition: color 0.5s;
+}
+
+.dropdown:hover button {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown button.scrolled {
+  color: black;
+  transition: color 0.5s;
 }
 
 .dropdown button:hover {

@@ -1,22 +1,29 @@
 let lastScrollTop = 0;
 let isAtTop = true;
 
-window.addEventListener(
-  "scroll",
-  function () {
+window.addEventListener("scroll", function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    let nav = document.querySelector("nav");
+    let navbar = document.querySelector(".navbar");
+    let dropdownButton = document.querySelectorAll(".dropdown button");
 
     if (scrollTop > lastScrollTop && scrollTop > 50) {
-      // Scroll down and not at the top
-      document.querySelector("nav").classList.add("scrolled");
-      isAtTop = false;
+        // Scroll down and not at the top
+        nav.classList.add("scrolled");
+        navbar.classList.add("scrolled");
+        dropdownButton.forEach((button) => {
+            button.classList.add("scrolled");
+        });
+        isAtTop = false;
     } else if (scrollTop === 0 && !isAtTop) {
-      // Scroll to top
-      document.querySelector("nav").classList.remove("scrolled");
-      isAtTop = true;
+        // Scroll to top
+        nav.classList.remove("scrolled");
+        navbar.classList.remove("scrolled");
+        dropdownButton.forEach((button) => {
+            button.classList.remove("scrolled");
+        });
+        isAtTop = true;
     }
 
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-  },
-  false
-);
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+}, false);
