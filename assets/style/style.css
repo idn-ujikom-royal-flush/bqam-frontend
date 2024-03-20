@@ -75,13 +75,11 @@ nav.scrolled {
 
 .navbar {
   overflow: hidden;
-  color: white;
-  transition: color 0.5s;
+  text-decoration: none;
 }
 
 .navbar.scrolled {
   color: #000000;
-  transition: color 0.5s;
 }
 
 .navbar a {
@@ -89,7 +87,13 @@ nav.scrolled {
   display: block;
   text-align: center;
   padding: 14px 20px;
+  color: white;
   text-decoration: none;
+  transition: color 0.5s;
+}
+
+.navbar.scrolled a {
+  color: #000000;
 }
 
 .navbar a:hover {
@@ -112,6 +116,10 @@ nav.scrolled {
   font-family: inherit;
   margin: 0;
   transition: color 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
 }
 
 .dropdown:hover button {
@@ -173,7 +181,7 @@ nav.scrolled {
 }
 
 .hero button {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   background-color: white;
   padding: 20px;
@@ -187,7 +195,7 @@ nav.scrolled {
   cursor: pointer;
   margin-top: 72px;
   line-height: 0%;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .hero button:is(:hover, :focus) {
@@ -217,18 +225,16 @@ nav.scrolled {
   flex-flow: column;
 }
 
-.aboutus-right div {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.aboutus-right div h6 {
-  font-weight: 700;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #323270;
+.aboutus-right h5 {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(0, 10, 151, 0.4);
   line-height: 0px;
+  padding: 20px;
+  background-color: #e6f8f4;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 1000px;
 }
 
 .aboutus-right div img {
@@ -250,7 +256,7 @@ nav.scrolled {
 }
 
 .aboutus-right p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
 }
 
@@ -260,9 +266,8 @@ nav.scrolled {
 
 .aboutus-right button {
   display: flex;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
-  padding: 20px;
   color: white;
   background-color: #323270;
   gap: 10px;
@@ -273,11 +278,10 @@ nav.scrolled {
   border: 2px solid #323270;
   cursor: pointer;
   line-height: 0%;
-  width: 20%;
-  height: 20%;
-  transition: all 0.5s;
-  /* min-height: 60px;
-  padding: 10px 20px; */
+  width: fit-content;
+  height: fit-content;
+  transition: all 0.3s;
+  padding: 20px;
 }
 
 .aboutus-right button:is(:hover, :focus) {
@@ -302,6 +306,8 @@ nav.scrolled {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .program-title h1 {
@@ -314,19 +320,16 @@ nav.scrolled {
   font-weight: normal;
 }
 
-.program-title-line {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.program-title-line h6 {
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #323270;
-  line-height: 0;
+.program-title h6 {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(0, 10, 151, 0.4);
+  line-height: 0px;
+  padding: 20px;
+  background-color: #e6f8f4;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 1000px;
 }
 
 .program-title-line img {
@@ -349,13 +352,20 @@ nav.scrolled {
   gap: 20px;
   height: auto;
   width: 400px;
+  transition: transform 0.5s;
+}
+
+.program-card-item:hover {
+  transform: scale(1.1);
 }
 
 .program-card-item img {
   width: 128px;
   height: auto;
+  border-radius: 1000px;
+  box-shadow: 0 4px 10px #999999;
+  transition: transform 0.5s;
 }
-
 .program-card-item h6 {
   font-weight: 700;
   font-size: 20px;
@@ -382,6 +392,8 @@ nav.scrolled {
 
 .alumni-title {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 10px;
   color: white;
@@ -403,23 +415,16 @@ nav.scrolled {
   font-weight: normal;
 }
 
-.alumni-title-line {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.alumni-title-line h6 {
-  line-height: 0%;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-
-.alumni-title-line img {
-  width: 100px;
-  height: auto;
+.alumni-title h6 {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(0, 10, 151, 0.4);
+  line-height: 0px;
+  padding: 20px;
+  background-color: #e6f8f4;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 1000px;
 }
 
 .alumni-card {
@@ -512,28 +517,23 @@ nav.scrolled {
 
 .news-title {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   text-align: center;
   gap: 10px;
 }
 
-.news-title-line {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.news-title-line h6 {
-  line-height: 0%;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-
-.news-title-line img {
-  width: 100px;
-  height: auto;
+.news-title h6 {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(0, 10, 151, 0.4);
+  line-height: 0px;
+  padding: 20px;
+  background-color: #e6f8f4;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 1000px;
 }
 
 .news-title h1 {
@@ -561,20 +561,24 @@ nav.scrolled {
   height: auto;
   overflow: hidden;
   border-radius: 5px;
-  transition: transform 1s ease;
+  transition: all 0.5s ease;
 }
 
 .news-card:hover {
-  transform: scale(1.1);
   box-shadow: 0 4px 10px #999999;
 }
 
 .news-card img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   background-position: center;
   background-size: cover;
+  transition: all 0.5s ease;
+}
+
+.news-card img:hover {
+  transform: scale(1.05);
 }
 
 .news-card-item {
@@ -625,29 +629,24 @@ nav.scrolled {
 }
 
 .lembaga-title {
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 10px;
 }
 
-.lembaga-title-line {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.lembaga-title-line h6 {
-  line-height: 0%;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-
-.lembaga-title-line img {
-  width: 80px;
-  height: auto;
+.lembaga-title h6 {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(0, 10, 151, 0.4);
+  line-height: 0px;
+  padding: 20px;
+  background-color: #e6f8f4;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 1000px;
 }
 
 .lembaga-title h1 {
@@ -700,7 +699,7 @@ iframe {
   color: white;
   background-color: #3c4b4e;
   gap: 10px;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .map-card:hover {
@@ -783,11 +782,20 @@ iframe {
   padding-block: 10px;
   background-color: white;
   border-radius: 5px;
+  border-color: white;
   color: #000000;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.promosi-page button:hover {
+  border-radius: 5px;
+  border-color: #ddd;
+  background-color: #ddd;
+  color: #000000;
 }
 
 /* !!! FOOTER !!! */
@@ -831,7 +839,7 @@ footer {
 }
 
 .footer-left p {
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: normal;
 }
@@ -881,9 +889,14 @@ footer {
 .footer-about-us a {
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   text-decoration: none;
   color: #000000;
+  transition: all;
+}
+
+.footer-about-us a:hover {
+  color: red;
 }
 
 .footer-registration {
@@ -900,9 +913,14 @@ footer {
 .footer-registration a {
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   text-decoration: none;
   color: #000000;
+  transition: all;
+}
+
+.footer-registration a:hover {
+  color: red;
 }
 
 .footer-bottom {
