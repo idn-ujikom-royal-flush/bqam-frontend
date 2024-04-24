@@ -254,7 +254,7 @@ header h1 {
 .news-bottom {
   display: flex;
   flex-flow: wrap;
-  gap: 50px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -262,7 +262,7 @@ header h1 {
 
 .news-card {
   position: relative;
-  width: 31%;
+  width: 32%;
   height: auto;
   text-decoration: none;
   box-shadow: 0 0px 2px #999999;
@@ -304,14 +304,14 @@ header h1 {
   gap: 10px;
   color: #ffffff;
   top: auto;
-  bottom: 50px;
-  left: 50px;
+  bottom: 20px;
+  left: 20px;
   right: auto;
   z-index: 1;
 }
 
 .news-text h3 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -324,7 +324,7 @@ header h1 {
 }
 
 .news-status h6 {
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -334,7 +334,7 @@ header h1 {
 }
 
 .news-status p {
-  font-size: 16px;
+  font-size: 14px;
   text-transform: lowercase;
 }
 
