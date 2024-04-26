@@ -173,7 +173,7 @@ header h1 {
 
 .all img {
   width: 100%;
-  height: 500px;
+  /* height: 100%; */
   object-fit: cover;
 }
 
@@ -359,19 +359,23 @@ footer {
 
 @media (max-width: 768px) {
   .all {
-    margin: 100px;
+    margin: 70px;
     transition: 0.2s;
   }
 
-  img {
+  .all img {
     width: 100%;
   }
 
-  h1 {
+  header h1 {
     font-size: 24px;
   }
 
-  h2 {
+  .misi h2 {
+    font-size: 20px;
+  }
+
+  .visi h2 {
     font-size: 20px;
   }
 
@@ -384,27 +388,31 @@ footer {
     margin-left: 20px;
   }
 
-  li {
+  .all-2 ol li {
     font-size: 15px;
     text-align: justify;
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 425px) {
   .all {
     margin: 50px;
     transition: 0.2s;
   }
 
-  img {
+  .all img {
     width: 100%;
   }
 
-  h1 {
+  header h1 {
     font-size: 16px;
   }
 
-  h2 {
+  .visi h2 {
+    font-size: 12px;
+  }
+
+  .misi h2 {
     font-size: 12px;
   }
 
@@ -417,7 +425,7 @@ footer {
     margin-left: 20px;
   }
 
-  li {
+  .all-2 ol li {
     font-size: 10px;
     text-align: justify;
   }
