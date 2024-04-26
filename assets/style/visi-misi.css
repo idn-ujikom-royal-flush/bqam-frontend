@@ -394,7 +394,7 @@ footer {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .all {
     margin: 50px;
     transition: 0.2s;
