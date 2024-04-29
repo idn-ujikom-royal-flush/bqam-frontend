@@ -39,7 +39,7 @@ nav {
   z-index: 1000;
   transition: all 1;
   background-color: transparent;
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 nav.scrolled {
@@ -52,7 +52,7 @@ nav.scrolled {
 .container-nav {
   display: flex;
   justify-content: space-between;
-  padding: 10 20px;
+  padding: 10px 20px;
 }
 
 .logo-nav {
@@ -159,6 +159,10 @@ nav.scrolled {
   display: block;
 }
 
+.menu-icon {
+  display: none !important;
+}
+
 /* !!! HERO !!! */
 
 .hero {
@@ -208,8 +212,7 @@ nav.scrolled {
 
 .aboutus {
   display: flex;
-  margin-inline: 80px;
-  margin-block: 140px;
+  margin: 80px 140px;
   justify-content: space-between;
   align-items: center;
   gap: 128px;
@@ -623,6 +626,10 @@ nav.scrolled {
 .news-card-item p {
   font-size: 14px;
   font-style: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* !!! LEMBAGA !!! */
@@ -671,9 +678,6 @@ nav.scrolled {
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
-}
-
-.lembaga-group {
 }
 
 .lembaga-card {
@@ -957,6 +961,186 @@ footer {
   line-height: 0%;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (max-width: 640px) {
+
+  /* HEADER */
+
+  header img {
+    width: 100%;
+    height: 568px;
+    background-image: none;
+    pointer-events: none;
+    object-fit: cover;
+  }
+
+  /* END HEADER */
+
+  /* NAVBAR */
+
+  nav {
+    padding: 10px 10px;
+  }
+
+  .logo-nav h1,
+  .navbar .home,
+  .dropdown,
+  .navbar .contact {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block !important;
+  }
+
+  .menu-icon button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-icon button:hover {
+    background-color: #ddd;
+    color: #000000;
+  }
+
+  /* END NAVBAR */
+
+  /* HERO */
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero button {
+    font-size: 14px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .hero button i {
+    display: none;
+  }
+
+  /* ABOUT US */
+
+  .aboutus {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    gap: 50px;
+  }
+
+  .aboutus img {
+    width: 80%;
+  }
+
+  .aboutus-right h6 {
+    font-size: 24px;
+  }
+
+  .aboutus-right button {
+    font-size: 14px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .aboutus-right button i {
+    display: none;
+  }
+
+  /* END ABOUT US */
+
+  /* PROGRAM */
+
+  .program {
+    gap: 64px;
+  }
+
+  .program-title h1 {
+    font-size: 32px;
+  }
+
+  .program-card {
+    flex-direction: column;
+  }
+
+  /* END PROGRAM */
+
+  /* ALUMNI */
+
+  .alumni {
+    gap: 64px;
+  }
+
+  .alumni-title h1 {
+    font-size: 32px;
+  }
+
+  /* END ALUMNI */
+
+  /* NEWS */
+
+  .news {
+    gap: 64px;
+  }
+
+  .news-group {
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  .news-title h1 {
+    font-size: 32px;
+  }
+
+  /* END NEWS */
+
+  /* LEMBAGA */
+
+  .lembaga {
+    gap: 64px;
+  }
+
+  .lembaga-title h1 {
+    font-size: 32px;
+  }
+
+  .lembaga-card{
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  /* END LEMBAGA */
+
+  /* PROMOSI */
+
+  .promosi h1 {
+    width: 100%;
+    font-size: 32px;
+  }
+
+  /* END PROMOSI */
+
+  /* FOOTER */
+
+  footer {
+
+  }
+
+  .footer-top {
+    flex-direction: column;
+  }
+
+
+
+  /* END FOOTER */
+  
+  @media screen and (max-width: 768px) {
+    
+  }
 
 }
