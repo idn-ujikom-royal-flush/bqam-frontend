@@ -249,6 +249,10 @@ header h1 {
   left: 10px;
   right: auto;
   z-index: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* END DOCUMENTATION CARD */

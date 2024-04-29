@@ -313,6 +313,10 @@ header h1 {
 .news-text h3 {
   font-size: 24px;
   font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .news-status {
