@@ -184,12 +184,13 @@ nav.scrolled {
   font-size: 32px;
 }
 
-.hero button {
+.hero a {
   font-weight: 500;
   font-size: 16px;
   background-color: white;
   padding: 20px;
   border-radius: 1000px;
+  width: fit-content;
   display: flex;
   align-items: center;
   text-align: center;
@@ -200,9 +201,11 @@ nav.scrolled {
   margin-top: 72px;
   line-height: 0%;
   transition: all 0.3s;
+  text-decoration: none;
+  color: #323270;
 }
 
-.hero button:is(:hover, :focus) {
+.hero a:is(:hover, :focus) {
   background-color: transparent;
   border: 2px solid white;
   color: white;
@@ -267,7 +270,7 @@ nav.scrolled {
   font-weight: bold;
 }
 
-.aboutus-right button {
+.aboutus-right a {
   display: flex;
   font-weight: 500;
   font-size: 16px;
@@ -287,9 +290,10 @@ nav.scrolled {
   height: fit-content;
   transition: all 0.3s;
   padding: 20px;
+  text-decoration: none;
 }
 
-.aboutus-right button:is(:hover, :focus) {
+.aboutus-right a:is(:hover, :focus) {
   background-color: #323270;
   color: #ffffff;
   border: 2px solid #323270;
