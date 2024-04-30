@@ -203,7 +203,7 @@ header h1 {
 .documentation-card {
   position: relative;
   width: 32%;
-  height: auto;
+  /* height: auto; */
   text-decoration: none;
   box-shadow: 0 0px 2px #999999;
   transition: all 0.5s;
@@ -408,3 +408,47 @@ footer {
 }
 
 /* END FOOTER */
+
+@media (max-width: 768px) {
+  .documentation-transition h3 {
+    font-size: 20px;
+    transition: 0.2s;
+  }
+
+  .documentation-card {
+    width: 45%;
+    transition: 0.2s;
+  }
+
+  .documentation-card img {
+    height: 280px;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .documentation-card {
+    width: 100%;
+  }
+
+  .documentation-card img {
+    height: 280px;
+    transition: 0.2s;
+  }
+
+  .documentation-transition h3 {
+    font-size: 12px;
+    transition: 0.2s;
+  }
+
+  .documentation-top h1 {
+    font-size: 20px;
+    transition: 0.2s;
+  }
+
+  .documentation-top a {
+    font-size: 14px;
+    transition: 0.2s; 
+  }
+}
