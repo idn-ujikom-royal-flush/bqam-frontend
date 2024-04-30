@@ -157,3 +157,173 @@ header h1 {
 }
 
 /* HEADER END */
+
+/* AGENDA */
+
+.agenda {
+  padding: 50px;
+}
+
+.agenda-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.agenda-top h1 {
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.agenda-top h1 span {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.agenda-year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.agenda-year h2 {
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.agenda-year i {
+  font-size: 24px;
+}
+
+.agenda-bottom {
+  display: flex;
+  flex-wrap: row;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+/* LATEST AGENDA */
+
+.agenda-card {
+  border-radius: 10px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 2px 10px #999999;
+}
+
+.agenda-card a {
+  top: auto;
+  left: auto;
+  bottom: auto;
+  right: auto;
+  margin: 10px;
+  position: absolute;
+  text-decoration: none;
+  color: #000000;
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 1000px;
+  width: fit-content;
+  height: fit-content;
+  line-height: 0;
+  z-index: 1;
+  transition: all 0.5 ;
+}
+
+.agenda-card a i {
+  font-size: 24px;
+}
+
+.agenda-card a:hover {
+  background-color: #7848f4;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+
+.agenda-card img {
+  position: relative;
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+}
+
+.agenda-group {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.agenda-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  text-align: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.agenda-date h1 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #7848f4;
+}
+
+.agenda-date h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.agenda-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.agenda-text h3 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.agenda-text p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #999999;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.agenda-text a {
+  position: relative;
+  background-color: #A2AEFE;
+  border: none;
+  text-decoration: none;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s;
+  width: fit-content;
+  height: fit-content;
+}
+
+.agenda-text a:hover {
+  background-color: #7848f4;
+}
+
+/* END LATEST AGENDA */
