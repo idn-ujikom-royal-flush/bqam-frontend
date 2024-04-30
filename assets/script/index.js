@@ -38,13 +38,3 @@ window.addEventListener(
   },
   false
 );
-
-var yearDropdown = document.getElementById("year-dropdown");
-var currentYear = new Date().getFullYear();
-
-for (var year = currentYear; year >= currentYear - 10; year--) {
-  var option = document.createElement("option");
-  option.text = year;
-  option.value = year;
-  yearDropdown.add(option);
-}
