@@ -371,8 +371,9 @@ footer {
     display: flex;
     align-items: start;
     flex-direction: column;
-    margin: 50px;
+    margin: 50px 0px;
     transition: 0.2s;
+    padding: 25px;
   }
 
   img {
