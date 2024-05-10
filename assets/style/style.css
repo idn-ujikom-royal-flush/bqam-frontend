@@ -310,8 +310,7 @@ nav.scrolled {
 .program {
   display: flex;
   flex-direction: column;
-  margin-inline: 80px;
-  margin-block: 140px;
+  margin: 140px 80px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -367,7 +366,7 @@ nav.scrolled {
   align-items: center;
   gap: 20px;
   height: auto;
-  width: 400px;
+  width: auto;
   transition: transform 0.5s;
 }
 
@@ -842,13 +841,13 @@ footer {
 .footer-top {
   display: flex;
   gap: 100px;
-  margin-block: 50px;
+  margin: 80px;
 }
 
 .footer-left {
   display: flex;
   flex-direction: column;
-  width: 800px;
+  width: auto;
   gap: 20px;
 }
 
@@ -961,7 +960,7 @@ footer {
   justify-content: space-between;
   width: 100%;
   background-color: #f5f5f5;
-  padding: 20px 256px;
+  padding: 20px 80px;
   align-items: center;
   text-align: center;
 }
@@ -1623,12 +1622,72 @@ footer {
 
   /* NEWS */
 
-  .news
+  .news-title h1{
+    font-size: 42px;
+  }
+
+  .news-group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   /* END NEWS */
+
+  /* LEMBAGA */
+
+  .lembaga-title h1 {
+    font-size: 42px;
+  }
+  
+  /* END LEMBAGA */
+
+  /* MAPS */
+
+  /* END MAPS */
+
+  /* PROMOSI */
+
+  .promosi-page {
+    margin: 40px;
+  }
+
+  .promosi-page h1 {
+    font-size: 42px;
+  }
+
+  .promosi-page p {
+    font-size: 24px;
+  }
+
+  /* END PROMOSI */
+
+  /* FOOTER */
+
+  .footer-top {
+    padding: 20px 40px;
+    gap: 50px;
+  }
+
+  .footer-left {
+    width: auto;
+  }
+
+  .footer-bottom {
+    padding : 20px 40px;
+  }
+
+  /* END FOOTER */
 
 }
 
 @media screen and (max-width: 1536px) {
+
+  /* HEADER */
+
+  /* END HEADER */
+
+  /* NAVBAR */
+
+  /* END NAVBAR */
   
 }
