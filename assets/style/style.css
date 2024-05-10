@@ -1623,9 +1623,61 @@ footer {
 
   /* NEWS */
 
-  .news
+  .news-title h1{
+    font-size: 42px;
+  }
+
+  .news-group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   /* END NEWS */
+
+  /* LEMBAGA */
+
+  .lembaga-title h1 {
+    font-size: 42px;
+  }
+  
+  /* END LEMBAGA */
+
+  /* MAPS */
+
+  /* END MAPS */
+
+  /* PROMOSI */
+
+  .promosi-page {
+    margin: 40px;
+  }
+
+  .promosi-page h1 {
+    font-size: 42px;
+  }
+
+  .promosi-page p {
+    font-size: 24px;
+  }
+
+  /* END PROMOSI */
+
+  /* FOOTER */
+
+  .footer-top {
+    padding: 20px 40px;
+    gap: 50px;
+  }
+
+  .footer-left {
+    width: auto;
+  }
+
+  .footer-bottom {
+    padding : 20px 40px;
+  }
+
+  /* END FOOTER */
 
 }
 
